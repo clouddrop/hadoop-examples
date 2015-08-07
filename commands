@@ -1,0 +1,5 @@
+hadoop jar ./wc_samar.jar  edu.wordcount.SimpleWordCount  /wc_input/  /tmp/wc_s3/
+hadoop jar ./wc_samar.jar  edu.wordcount.WordCountCombiner  /wc_input/  /tmp/wc_s4/
+hadoop jar ./wc_samar.jar com.test.deidentify.DeIdentifyData  /hc_input/ /tmp/wc_s5/
+
+hadoop jar ~/wc_samar.jar   edu.weather.MaxofMonthWeatherData  /we_input/ /tmp/wc_s6
